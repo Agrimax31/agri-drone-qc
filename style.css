@@ -1,0 +1,49 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+  background: #f7faf7;
+  color: #1a2e1a;
+}
+header {
+  background: #1b5e20;
+  color: white;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 { margin: 0; font-size: 1.4rem; }
+nav a {
+  color: white;
+  margin-left: 1.2rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+nav a.active { text-decoration: underline; }
+main, section {
+  padding: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 1rem 1.2rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+.row { display: flex; justify-content: space-between; }
+.status.en-cours { color: #2e7d32; font-weight: 600; }
+.status.termine { color: #666; }
+.btn {
+  background: #2e7d32;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+.ok { color: #2e7d32; margin: 0.3rem 0; }
+.hidden { display: none; }

@@ -1,12 +1,66 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AgriDrone QC</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AgriDrone QC</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>AgriDrone QC</h1>
+    <nav>
+      <a href="#jobs" class="active">Jobs</a>
+      <a href="#melange">Mélange</a>
+      <a href="#rapports">Rapports</a>
+      <a href="#parcelles">Parcelles</a>
+    </nav>
+  </header>
+
+  <main id="jobs">
+    <h2>Mes jobs</h2>
+    <button class="btn">+ Nouveau job</button>
+    <div class="card">
+      <div class="row">
+        <strong>Champ Nord - Maïs</strong>
+        <span class="status en-cours">En cours</span>
+      </div>
+      <p>Ferme Larivière • 120 acres • 12 mai 2025</p>
+    </div>
+    <div class="card">
+      <div class="row">
+        <strong>Champ Ouest - Blé</strong>
+        <span class="status termine">Terminé</span>
+      </div>
+      <p>Ferme Larivière • 85 acres • 3 mai 2025</p>
+    </div>
+  </main>
+
+  <section id="melange" class="hidden">
+    <h2>Calculateur de mélange</h2>
+    <div class="card">
+      <label>Gallons par acre</label><br>
+      <input type="number" value="2.0">
+    </div>
+    <div class="card">
+      <h3>Recettes enregistrées</h3>
+      <p>Fongicide Blé — 2.0 gal/acre</p>
+      <p>Fongicide Maïs — 2.5 gal/acre</p>
+    </div>
+  </section>
+
+  <section id="rapports" class="hidden">
+    <h2>Rapports</h2>
+    <div class="card"><strong>Rapport mensuel Transport Canada</strong><p class="ok">Généré</p></div>
+    <div class="card"><strong>Registre d’applications de pesticides</strong><p class="ok">Généré</p></div>
+  </section>
+
+  <section id="parcelles" class="hidden">
+    <h2>Parcelles & Clients</h2>
+    <div class="card"><strong>La Grande Pièce</strong> — Maïs<br>18,7 ha</div>
+    <div class="card"><strong>Champ du Moulin</strong> — Soya<br>14,2 ha</div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
 </html>
